@@ -34,8 +34,7 @@ jobs:
         run: npm run build
 
       - name: Archive production artifacts
-        run: |
-          tar -czf build.tar.gz .next public node_modules
+        run: tar -czf build.tar.gz .next public node_modules
 
       - name: Copy build to server
         uses: appleboy/scp-action@v0.1.7

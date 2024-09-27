@@ -25,7 +25,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /var/www/theprimejnr
+            cd /var/www/ThePrimeJnr
             git pull origin main
             npm install --production
             npm run build

@@ -33,17 +33,18 @@ jobs:
       - name: Build Next.js application
         run: npm run build
 
-      - name: Copy build to server
+      - name: Archive production artifacts
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
+          tar -czf build.tar.gz .next public node_modules
 
-          # Copy the directories to the server
-          scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -r .next public node_modules ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/ThePrimeJnr/
-
-          # Clean up the SSH key
-          rm ~/.ssh/deploy_key
+      - name: Copy build to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: build.tar.gz
+          target: /var/www/theprimejnr
 
       - name: Deploy on Server
         uses: appleboy/ssh-action@v1.0.3
@@ -52,4 +53,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            pm2 restart theprimejnr
+            cd /var/www/theprimejnr
+            tar -xzf build.tar.gz
+            # rm build.tar.gz
+            # pm2 restart theprimejnr

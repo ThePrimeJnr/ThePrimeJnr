@@ -40,7 +40,7 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
 
           # Copy the directories to the server
-          scp -i ~/.ssh/deploy_key -r .next public node_modules ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/ThePrimeJnr/
+          scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -r .next public node_modules ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/ThePrimeJnr/
 
           # Clean up the SSH key
           rm ~/.ssh/deploy_key

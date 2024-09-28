@@ -21,7 +21,7 @@ export default function Sidebar() {
         <figure className="avatar-box mb-4">
           <Image
             src="/assets/images/my-avatar.png"
-            alt="Richard Hanrick"
+            alt="Destiny Saturday"
             width={80}
             height={80}
             className="rounded-full"
@@ -29,8 +29,8 @@ export default function Sidebar() {
         </figure>
 
         <div className="info-content">
-          <h1 className="text-white text-2xl font-bold" title="Richard Hanrick">
-            Richard Hanrick
+          <h1 className="text-white text-2xl font-bold" title="Destiny Saturday">
+            Destiny Saturday
           </h1>
           <p className="text-gray-400">Web Developer</p>
         </div>

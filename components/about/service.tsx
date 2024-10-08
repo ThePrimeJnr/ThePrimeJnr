@@ -6,22 +6,21 @@ interface ServiceItemProps {
 
 function ServiceItem({ icon, title, description }: ServiceItemProps) {
   return (
-    <li className="service-item">
-      <div className="service-icon-box">
-        <img src={icon} alt={`${title} icon`} width="40" />
-      </div>
-      <div className="service-content-box">
-        <h4 className="h4 service-item-title">{title}</h4>
-        <p className="service-item-text">{description}</p>
+    <li className="service-item flex flex-col items-center text-center relative bg-gradient-to-br from-[#404040] to-[#40404000] p-5 rounded-xl shadow-lg">
+      <img src={icon} alt={`${title} icon`} width="40" />
+      <div className="service-content-box mt-4">
+        <h4 className="h4 service-item-title text-white text-lg font-bold">{title}</h4>
+        <p className="service-item-text text-gray-300">{description}</p>
       </div>
     </li>
   );
 }
 
+
 function ServiceList() {
   const services = [
     {
-      icon: "/assets/images/icon-design.svg",
+      icon: "/icons/rest-api-icon.svg",
       title: "Web Design",
       description:
         "The most modern and high-quality design made at a professional level.",
@@ -47,7 +46,7 @@ function ServiceList() {
   ];
 
   return (
-    <ul className="service-list">
+    <ul className="service-list flex flex-col my-2 gap-4">
       {services.map((service) => (
         <ServiceItem
           key={service.title}
@@ -63,7 +62,7 @@ function ServiceList() {
 export default function Service() {
   return (
     <section className="service">
-      <h3 className="h3 service-title">What I&apos;m doing</h3>
+      <h3 className="service-title">What I&apos;m doing</h3>
       <ServiceList />
     </section>
   );

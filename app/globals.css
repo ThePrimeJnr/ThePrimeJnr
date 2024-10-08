@@ -5,20 +5,46 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --border-color: #e2e2e2;
+  --page-background: #f9f9f9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #121212;
+    --foreground: #d6d6d6;
+    --border-color: #383838;
+    --page-background: #1e1e1f;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+  border-color: var(--border-color);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
+.page {
+  background: var(--page-background);
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl font-semibold text-white;
+  }
+  h3 {
+    @apply text-xl font-semibold text-white;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

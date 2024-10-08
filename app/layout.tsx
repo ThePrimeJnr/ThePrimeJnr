@@ -1,8 +1,6 @@
 import { poppins } from "@/lib/ui/font";
 import type { Metadata } from "next";
 import "./globals.css";
-import Sidebar from "@/components/layout/sidebar";
-import Navbar from "@/components/layout/navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,10 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className}`}>
-        <main>
-          <Sidebar />
-          <Navbar />
-          {children}
+        <main className="mx-3 my-4">
+          <div className="page border rounded-3xl p-4">
+            {children}
+          </div>
         </main>
       </body>
     </html>

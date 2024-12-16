@@ -37,7 +37,7 @@ const Hero = () => {
             height={32}
             className="rounded-full"
           />
-          Creator, GitEarn
+          Building, Lernza
         </div>
       </div>
     </div>

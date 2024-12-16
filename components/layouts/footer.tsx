@@ -8,7 +8,7 @@ const Footer = () => {
       </h3>
       <div className="flex md:flex-row flex-col justify-between items-center">
         <span className="mb-2 md:mb-0 text-center md:text-left">
-          © 2024 DestinedCodes. All rights reserved
+          © 2024 ThePrimeJnr. All rights reserved
         </span>
         <SocialList showNames={false} />
       </div>

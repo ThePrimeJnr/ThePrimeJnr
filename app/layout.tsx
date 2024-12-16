@@ -19,9 +19,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicons/favicon.ico" sizes="any" />
-      </head>
       <body
         className={`${fonts.publicSans.className} antialiased min-h-screen font-mono`}
       >

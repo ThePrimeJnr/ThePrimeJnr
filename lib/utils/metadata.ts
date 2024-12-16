@@ -11,14 +11,14 @@ export default function getMetadata(page: string) {
       title: siteData.title,
       description: siteData.description,
       url: siteData.url,
-      siteName: 'Destiny Saturday (DestinedCodes)',
+      siteName: 'Destiny Saturday (ThePrimeJnr)',
       image: siteData.ogImageUrl,
       locale: 'en_US',
       type: 'website',
       images: [
         {
           url: siteData.ogImageUrl,
-          alt: 'Destiny Saturday (DestinedCodes)',
+          alt: 'Destiny Saturday (ThePrimeJnr)',
           width: 1200,
           height: 630,
         },
@@ -26,8 +26,8 @@ export default function getMetadata(page: string) {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@destinedcodes',
-      creator: '@destinedcodes',
+      site: '@ThePrimeJnr',
+      creator: '@ThePrimeJnr',
     },
   };
 

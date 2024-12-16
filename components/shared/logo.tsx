@@ -8,10 +8,10 @@ const Logo = ({ title }: any) => {
     <Link className="flex justify-center items-center" href="/">
       <div className="border-2 border-secondary p-0.5 rounded-full">
         <Image
-          src="/logos/destinedcodes.png"
+          src="/logos/ThePrimeJnr.png"
           height={32}
           width={32}
-          alt="destinedcodes logo"
+          alt="ThePrimeJnr Logo"
           priority={true}
           className="rounded-full"
         />

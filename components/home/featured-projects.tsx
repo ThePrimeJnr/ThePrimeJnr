@@ -41,9 +41,7 @@ const FeaturedProjects = () => {
 
   return (
     <div id="featured-projects">
-      <h2 className="font-bold text-4xl md:text-5xl mb-8">
-      Featured Projects
-      </h2>
+      <h2 className="font-bold text-4xl md:text-5xl mb-8">Featured Projects</h2>
       <div className="space-y-10">
         {featuredProjects.map((project, index) => (
           <div
@@ -66,7 +64,6 @@ const FeaturedProjects = () => {
                   alt={project.title}
                   width={400}
                   height={250}
-                  
                   className="rounded-lg object-cover h-[250px]"
                 />
               </Link>
@@ -112,7 +109,6 @@ const FeaturedProjects = () => {
                 alt={project.title}
                 width={400}
                 height={250}
-                
                 className="rounded-lg object-cover h-[250px]"
               />
             </Link>

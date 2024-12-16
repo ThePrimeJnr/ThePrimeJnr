@@ -46,9 +46,7 @@ const FeaturedArticles = () => {
 
   return (
     <div id="featured-articles">
-      <h2 className="font-bold text-4xl md:text-5xl mb-8">
-      Featured Articles
-      </h2>
+      <h2 className="font-bold text-4xl md:text-5xl mb-8">Featured Articles</h2>
       <div className="space-y-10">
         {featuredArticles.map((article, index) => (
           <Link

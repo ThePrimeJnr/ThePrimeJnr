@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: ['/', '/blog', '/projects', '/videos', '/contact'],
       disallow: [],
     },
-    sitemap: 'https://destinedcodes.com/sitemap.xml',
+    sitemap: 'https://theprimejnr.com/sitemap.xml',
   };
 }

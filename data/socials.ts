@@ -16,33 +16,32 @@ export interface Social {
 const socials: Social[] = [
   {
     name: 'Mail',
-    value: 'contact@destinedcodes.com',
+    value: 'destiny@theprimejnr.com',
     logo: MailOutlined,
   },
   {
     name: 'GitHub',
-    value: 'https://github.com/destinedcodes',
+    value: 'https://github.com/ThePrimeJnr',
     logo: GitHub,
   },
   {
     name: 'X',
-    value: 'https://twitter.com/destinedcodes',
+    value: 'https://twitter.com/ThePrimeJnr',
     logo: X,
   },
   {
     name: 'LinkedIn',
-    value: 'https://www.linkedin.com/in/destinedcodes',
+    value: 'https://www.linkedin.com/in/ThePrimeJnr',
     logo: LinkedIn,
   },
   {
     name: 'Youtube',
-    value: 'https://youtube.com/@destinedcodes',
+    value: 'https://youtube.com/@ThePrimeJnr',
     logo: YouTube,
   },
   {
     name: 'Resume',
-    value:
-      '/resume',
+    value: '/resume',
     logo: DescriptionOutlined,
   },
 ];

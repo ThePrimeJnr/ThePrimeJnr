@@ -82,7 +82,7 @@ const Navbar = () => {
         <ThemeToggleButton />
       </div>
       <div className="md:flex justify-between items-center hidden w-full">
-        <Logo title={'DestinedCodes'} />
+        <Logo title={'ThePrimeJnr'} />
         <div className="flex items-center space-x-1">
           <RouteLinks />
           <ThemeToggleButton />

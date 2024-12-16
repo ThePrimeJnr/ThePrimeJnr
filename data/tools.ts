@@ -1,11 +1,9 @@
 import {
   IconType,
-  SiAmazonaws,
   SiAmazons3,
   SiAndroidstudio,
   SiApache,
   SiAsana,
-  SiAzuredevops,
   SiBootstrap,
   SiC,
   SiCelery,
@@ -69,7 +67,6 @@ import {
   SiTypescript,
   SiVercel,
   SiVim,
-  SiVisualstudiocode,
 } from '@icons-pack/react-simple-icons';
 
 export interface Tool {
@@ -262,16 +259,6 @@ const tools: Tool[] = [
 
   // Cloud/DevOps
   {
-    name: 'Azure',
-    icon: SiAzuredevops,
-    type: 'Cloud/DevOps',
-  },
-  {
-    name: 'AWS',
-    icon: SiAmazonaws,
-    type: 'Cloud/DevOps',
-  },
-  {
     name: 'Amazon S3',
     icon: SiAmazons3,
     type: 'Cloud/DevOps',
@@ -386,11 +373,6 @@ const tools: Tool[] = [
   {
     name: 'Asana',
     icon: SiAsana,
-    type: 'Tools',
-  },
-  {
-    name: 'Visual Studio',
-    icon: SiVisualstudiocode,
     type: 'Tools',
   },
   {

@@ -34,7 +34,8 @@ jobs:
         run: npm run build
 
       - name: Archive production artifacts
-        run: tar -czf build.tar.gz \
+        run: |
+          tar -czf build.tar.gz \
           .next \
           public \
           next.config.js \

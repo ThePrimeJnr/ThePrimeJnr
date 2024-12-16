@@ -37,7 +37,7 @@ jobs:
         run: tar -czf build.tar.gz \
           .next \
           public \
-          next.config.ts \
+          next.config.js \
           package.json \
           package-lock.json
 
